@@ -226,24 +226,24 @@ export class Game {
         try {
             // 加载图片资源
             this.images = {
-                background: await this.loadImage('/resources/images/background1.jpg'),
+                background: await this.loadImage('resources/images/background1.jpg'),
                 fruits: await Promise.all([
-                    this.loadImage('/resources/images/fruits/apple.png'),
-                    this.loadImage('/resources/images/fruits/orange.png'),
-                    this.loadImage('/resources/images/fruits/pineapple.png'),
-                    this.loadImage('/resources/images/fruits/strawberry.png')
+                    this.loadImage('resources/images/fruits/apple.png'),
+                    this.loadImage('resources/images/fruits/orange.png'),
+                    this.loadImage('resources/images/fruits/pineapple.png'),
+                    this.loadImage('resources/images/fruits/strawberry.png')
                 ]),
                 poses: {
-                    handsJoined: await this.loadImage('/resources/images/poses/hands-joined.png'),
-                    prayingHands: await this.loadImage('/resources/images/poses/praying-hands.png'),
-                    squat: await this.loadImage('/resources/images/poses/squat.png')
+                    handsJoined: await this.loadImage('resources/images/poses/hands-joined.png'),
+                    prayingHands: await this.loadImage('resources/images/poses/praying-hands.png'),
+                    squat: await this.loadImage('resources/images/poses/squat.png')
                 }
             };
             // 加载音效
             this.sounds = {
-                succeed: new Audio('/resources/sounds/succeed.mp3'),
-                fail: new Audio('/resources/sounds/fail.mp3'),
-                background: new Audio('/resources/sounds/background.mp3')
+                succeed: new Audio('resources/sounds/succeed.mp3'),
+                fail: new Audio('resources/sounds/fail.mp3'),
+                background: new Audio('resources/sounds/background.mp3')
             };
             // 设置背景音乐循环播放
             this.sounds.background.loop = true;
