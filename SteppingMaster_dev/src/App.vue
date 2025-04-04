@@ -43,7 +43,7 @@ const gameStarted = ref(false)
 
 // 背景样式
 const containerStyle = ref({
-  backgroundImage: 'url(/SteppingMaster/resources/background.jpg)',
+  backgroundImage: 'url(/resources/background.jpg)',
   backgroundSize: 'cover',
   backgroundPosition: 'center',
   backgroundRepeat: 'no-repeat'
