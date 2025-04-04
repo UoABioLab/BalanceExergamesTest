@@ -4,7 +4,7 @@ export function useAudio() {
   const bgMusic = new Audio('resources/Background_music.mp3')
   const successSound = new Audio('resources/Succeed.MP3')
   const failSound = new Audio('resources/Error.mp3')
-  //const beepSound = new Audio('resources/beep.mp3')
+  const beepSound = new Audio('resources/beep.mp3')
   const isMuted = ref(false)
 
   // 设置背景音乐循环
