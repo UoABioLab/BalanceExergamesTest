@@ -191,7 +191,8 @@
     <script>
         function redirectTo(description) {
             //window.location.href = `https://uoabiolab.github.io/${description}/`;
-            window.location.href = `${description}/index.html`;
+            const base = window.location.pathname.replace(/\/$/, ''); // 去掉末尾斜杠
+            window.location.href = `${base}/${description}/`;
         }
 
         // 页面加载时获取访问次数
